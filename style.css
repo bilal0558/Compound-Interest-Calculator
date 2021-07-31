@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    width: 400px;
+    height: 60vh;
+    background: #202020;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: rgb(200, 200, 200);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.head{
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#principle-amount, #interest-rate, #years, #interest{
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    background: #121212;
+    color:rgb(200, 200, 200);
+}
+
+#principle-amount:focus, #interest-rate:focus,  #years:focus, #interest:focus{
+    outline: none;
+}
+
+#changeBtn{
+    background: #b8005c;
+    backdrop-filter:opacity(.1);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 5px;
+    width: 50%;
+    transition: background 200ms, transform 100ms;
+}
+
+#changeBtn:hover{
+    background: #ff1d8e;
+    transform: translateY(-2px);
+}
+
+#changeBtn:active{
+    transform: translateY(2px);
+}
